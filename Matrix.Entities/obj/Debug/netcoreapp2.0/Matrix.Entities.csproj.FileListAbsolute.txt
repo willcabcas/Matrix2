@@ -1,0 +1,9 @@
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.Entities\bin\Debug\netcoreapp2.0\Matrix.Entities.deps.json
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.Entities\bin\Debug\netcoreapp2.0\Matrix.Entities.dll
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.Entities\bin\Debug\netcoreapp2.0\Matrix.Entities.pdb
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.Entities\obj\Debug\netcoreapp2.0\Matrix.Entities.csprojResolveAssemblyReference.cache
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.Entities\obj\Debug\netcoreapp2.0\Matrix.Entities.csproj.CoreCompileInputs.cache
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.Entities\obj\Debug\netcoreapp2.0\Matrix.Entities.AssemblyInfoInputs.cache
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.Entities\obj\Debug\netcoreapp2.0\Matrix.Entities.AssemblyInfo.cs
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.Entities\obj\Debug\netcoreapp2.0\Matrix.Entities.dll
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.Entities\obj\Debug\netcoreapp2.0\Matrix.Entities.pdb

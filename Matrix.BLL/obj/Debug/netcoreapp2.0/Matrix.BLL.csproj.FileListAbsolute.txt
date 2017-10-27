@@ -1,0 +1,13 @@
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\bin\Debug\netcoreapp2.0\Matrix.BLL.deps.json
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\bin\Debug\netcoreapp2.0\Matrix.BLL.dll
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\bin\Debug\netcoreapp2.0\Matrix.BLL.pdb
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\bin\Debug\netcoreapp2.0\Matrix.DAL.dll
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\bin\Debug\netcoreapp2.0\Matrix.Entities.dll
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\bin\Debug\netcoreapp2.0\Matrix.DAL.pdb
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\bin\Debug\netcoreapp2.0\Matrix.Entities.pdb
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\obj\Debug\netcoreapp2.0\Matrix.BLL.csprojResolveAssemblyReference.cache
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\obj\Debug\netcoreapp2.0\Matrix.BLL.csproj.CoreCompileInputs.cache
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\obj\Debug\netcoreapp2.0\Matrix.BLL.AssemblyInfoInputs.cache
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\obj\Debug\netcoreapp2.0\Matrix.BLL.AssemblyInfo.cs
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\obj\Debug\netcoreapp2.0\Matrix.BLL.dll
+c:\users\darkblue\documents\visual studio 2017\Projects\Matrix\Matrix.BLL\obj\Debug\netcoreapp2.0\Matrix.BLL.pdb

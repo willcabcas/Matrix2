@@ -1,0 +1,135 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="wizard-container">
+                <div class="card wizard-card" data-color="red" id="wizard">
+                    <div class="wizard-header">
+                        <h3 class="wizard-title"><img src="~/images/Armadillo/logo.png" /></h3>
+                        <br />
+                        <p class="category" id="txt1">CUBO 3D</p>
+                        <p class="category" id="txt2">PRUEBA TECNICA USANDO .NET CORE 2</p>
+                        <p class="category" id="txt3">Digite las opciones</p>
+                    </div>
+                    <div class="wizard-navigation">
+                        <div class="progress-with-circle">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 15%;"></div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#personas" data-toggle="tab">
+                                    <div class="icon-circle">
+                                        <i class="ti-map"></i>
+                                    </div>
+                                    <p class="category" id="txt4">Agregar personas</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane" id="personas">
+                            <div class="row">
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Comando</label>
+                                        <input type="text" class="form-control" id="commandtxt" />
+                                        <br />
+                                        <button class="btn-primary k-primary" id="ejecutarcmd">Ejecutar</button>
+                                        <br />
+                                        <br />
+
+                                        <label class="control-label">Historial de comandos</label>
+                                        <textarea class="form-control " id="historialtxt"></textarea>
+                                        <label class="control-label">Resultados</label>
+                                        <textarea class="form-control" id="resulttxt"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3"></div>
+                            </div>
+                            <br />
+                        </div>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .k-primary {
+        color: #000000;
+        background: #f24d4f;
+        border: 0px;
+        width: 100px;
+        height: 50px;
+    }
+
+        .k-primary:hover {
+            color: #777777;
+            background: #ffdf92;
+        }
+</style>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $("#ejecutarcmd").click(function () {
+        //alert($("#commandtxt").val());
+        var cmdtxt = $("#commandtxt").val();
+        var cmdtxtSplit = cmdtxt.split(" ");
+        if (cmdtxtSplit.length == 1) {
+            if (cmdtxtSplit[0] > 1 && cmdtxtSplit[0] < 50)
+            {
+                $.get('/Home/ResetValDataBase/?casoPrueba=' + $("#commandtxt").val(), function (result) {
+                    $("#resulttxt").append($("#commandtxt").val() + "\\");
+                });
+            } else
+            {
+                $("#resulttxt").append("Valor fuera de rango\\");
+             }
+
+        }
+        else if (cmdtxtSplit.length == 2) {
+            if (cmdtxtSplit[0] >= 1 && cmdtxtSplit[0] <= 100 && cmdtxtSplit[1] >= 1 && cmdtxtSplit[1] <= 1000 ) {
+                $.get('/Home/crearCubo3D/?tamanoCubo3D=' + cmdtxtSplit[0] + '&numeroOperaciones=' + cmdtxtSplit[1], function (result) {
+                    $("#resulttxt").append(cmdtxtSplit[0] + "\\");
+                    $("#historialtxt").append(cmdtxtSplit[0] + "\\");
+                });
+            }
+            else
+            {
+                if (cmdtxtSplit[0] >= 1 && cmdtxtSplit[0] <= 100) { }
+                else
+                { 
+                    $("#resulttxt").append("Valor de matriz fuera de rango\\");
+                }
+
+                if (cmdtxtSplit[1] >= 1 && cmdtxtSplit[1] <= 1000) { }
+                else {
+                    $("#resulttxt").append("Numero de operaciones fuera de rango\\");
+                }
+             }
+        }
+        else {
+            if (cmdtxtSplit[0] === "UPDATE") {
+                $.get('/Home/updateCubo3D/?x=' + cmdtxtSplit[1] + '&y=' + cmdtxtSplit[2] + '&z=' + cmdtxtSplit[3] + '&val=' + cmdtxtSplit[4], function (result) {
+                });
+                $("#historialtxt").append(cmdtxtSplit[4] + "\\");
+            }
+            else if (cmdtxtSplit[0] === "QUERY") {
+                alert(cmdtxtSplit[1] + " " + cmdtxtSplit[2] + " "+cmdtxtSplit[3] + " "+cmdtxtSplit[4] + " "+cmdtxtSplit[5] + " "+cmdtxtSplit[6]);
+                $.get('/Home/queryCubo3D/?x1=' + cmdtxtSplit[1] + '&y1=' + cmdtxtSplit[2] + '&z1=' + cmdtxtSplit[3] + '&x2=' + cmdtxtSplit[4] + '&y2=' + cmdtxtSplit[5] + '&z2=' + cmdtxtSplit[6], function (result) {
+                    $("#resulttxt").append(result + "\\");
+                    $("#historialtxt").append($("#commandtxt").val());
+                });
+            }
+        }
+        $("#historialtxt").append(cmdtxt + "\\");
+    });
+</script>

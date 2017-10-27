@@ -1,0 +1,12 @@
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\bin\Debug\netcoreapp2.0\MVC2.deps.json
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\bin\Debug\netcoreapp2.0\MVC2.runtimeconfig.json
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\bin\Debug\netcoreapp2.0\MVC2.runtimeconfig.dev.json
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\bin\Debug\netcoreapp2.0\MVC2.dll
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\bin\Debug\netcoreapp2.0\MVC2.pdb
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\obj\Debug\netcoreapp2.0\MVC2.csprojResolveAssemblyReference.cache
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\obj\Debug\netcoreapp2.0\MVC2.csproj.CoreCompileInputs.cache
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\obj\Debug\netcoreapp2.0\MVC2.AssemblyInfoInputs.cache
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\obj\Debug\netcoreapp2.0\MVC2.AssemblyInfo.cs
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\obj\Debug\netcoreapp2.0\MVC2.dll
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\obj\Debug\netcoreapp2.0\MVC2.pdb
+C:\Users\darkblue\documents\visual studio 2017\Projects\Matrix\MVC2\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
